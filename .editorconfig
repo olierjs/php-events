@@ -1,0 +1,14 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_new_line = true
+indent_size = 4
+indent_style = space
+
+[*.{php,html,js}]
+charset = utf-8
+
+[{.travis.yml}]
+indent_style = space
+indent_size = 2

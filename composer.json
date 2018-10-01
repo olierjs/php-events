@@ -1,0 +1,28 @@
+{
+    "name": "TbhT/php-events",
+    "description": "a event emitter for php",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Press\\Utils\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.5"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/TbhT-lib/php-events.git"
+        }
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TbhT",
+            "email": "hustapple132@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
