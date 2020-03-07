@@ -1,6 +1,7 @@
 # EventEmitter
 
-[![Build Status](https://travis-ci.com/sugar-libraries/php-events.svg?branch=master)](https://travis-ci.com/sugar-libraries/php-events)
+[![Build Status](https://travis-ci.com/TbhT-lib/php-events.svg?branch=master)](https://travis-ci.com/TbhT-lib/php-events)
+
 
 ## Install
 
@@ -164,3 +165,4 @@ count($listeners['bar']) === 1;
 count($listeners['baz']) === 1;
 ```
 
+## `get_`
