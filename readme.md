@@ -4,7 +4,7 @@
 
 ## Install
 
-> loading
+`composer require tbht/php-events`
 
 ## Usage
 
