@@ -1,10 +1,10 @@
 # EventEmitter
 
-[![Build Status](https://travis-ci.com/sugar-libraries/php-events.svg?branch=master)](https://travis-ci.com/sugar-libraries/php-events)
+![PHP Composer](https://github.com/sugar-libraries/php-events/workflows/PHP%20Composer/badge.svg)
 
 ## Install
 
-> loading
+`composer require tbht/php-events`
 
 ## Usage
 
