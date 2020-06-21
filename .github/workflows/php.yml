@@ -29,10 +29,11 @@ jobs:
     - name: Install dependencies
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
-    - run: ./vendor/bin/phpunit --verbose ./test
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Run test suite
+      run: composer run-script test
+    - name: coverage
+      run: bash <(curl -s https://codecov.io/bash) -t 3aae9075-186f-444b-bd28-d12e170a24d8
