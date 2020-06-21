@@ -1,5 +1,5 @@
 {
-    "name": "TbhT/php-events",
+    "name": "tbht/php-events",
     "description": "a event emitter for php",
     "type": "library",
     "autoload": {
@@ -24,5 +24,8 @@
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+    "require": {},
+    "scripts": {
+        "test": "./vendor/bin/phpunit ./test"
+    }
 }
