@@ -1,6 +1,7 @@
 # EventEmitter
 
 ![PHP Composer](https://github.com/sugar-libraries/php-events/workflows/PHP%20Composer/badge.svg)
+[![codecov](https://codecov.io/gh/sugar-libraries/php-events/branch/master/graph/badge.svg)](https://codecov.io/gh/sugar-libraries/php-events)
 
 ## Install
 
@@ -23,7 +24,7 @@ $ee->add_listener('foo', function () {
 // the same as $ee->on()
 $ee->on('foo', function () {
     echo "this is a listener for php \n";
-})
+});
 
 $ee->emit('foo');
 
@@ -103,11 +104,11 @@ use Press\Utils\Events;
 
 $fn1 = function () {
     var_dump('this is first fn');
-}
+};
 
 $fn2 = function () {
     var_dump('this is second fn');
-}
+};
 
 $ee = new Events();
 $ee->add_listeners('foo', $fn1)
