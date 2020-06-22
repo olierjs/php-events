@@ -9,7 +9,7 @@ matrix:
   - sudo: true
     dist: trusty
     cache:
-      directories: "$HOME/.composer/cache"
+      directories: ["$HOME/.composer/cache"]
     before_install:
       - wget https://phar.phpunit.de/phpunit-6.5.13.phar
     script:
@@ -29,3 +29,8 @@ install:
 
 script:
 - phpunit --verbose $PHPUNIT_FLAGS
+- vendor/bin/phpunit --coverage-clover=coverage.xml
+
+after_success:
+    - export CODECOV_TOKEN="3aae9075-186f-444b-bd28-d12e170a24d8"
+    - bash <(curl -s https://codecov.io/bash)
