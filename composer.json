@@ -20,7 +20,7 @@
             "email": "hustapple132@gmail.com"
         }
     ],
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "require": {},
     "scripts": {
         "test": "./vendor/bin/phpunit --coverage-clover=coverage.xml"
